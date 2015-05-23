@@ -1,0 +1,28 @@
+package StudyGraphic;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+
+public class FrameDpProxy extends JFrame{
+
+	public FrameDpProxy(){
+		setTitle("Proxy");
+		setBounds(70, 70, 400, 200);
+		setLayout(new FlowLayout());
+
+		
+
+		setVisible(true);
+	}
+	
+}
+
+
+interface ImageDpProxy {
+	public void display();
+}
+
+class ImageProxy {
+	
+}

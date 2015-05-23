@@ -1,0 +1,78 @@
+package StudyGraphic;
+
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class FrameDpProxy extends JFrame{
+
+	public FrameDpProxy(){
+		setTitle("Proxy");
+		setBounds(70, 70, 400, 200);
+		setLayout(new FlowLayout());
+
+		
+
+		setVisible(true);
+	}
+	
+}
+
+final class PanelXX extends JPanel{
+	
+	PanelXX () {
+		
+	}
+	
+	@Override
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		g.drawString("texting", 50, 50);
+	}
+	
+}
+
+abstract class ImageDpProxy {
+	String path;
+	public void setPath (String _path) {
+		this.path = _path;
+	}
+	
+	public String getPath() {
+		return this.path;
+	}
+	
+	public abstract void display();
+}
+
+class ImageProxy extends ImageDpProxy{
+
+	RealImage realImage;
+	
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		if(realImage == null) {
+			realImage = new RealImage();
+			realImage.setPath("/defaultPath");
+			realImage.display();
+		}else{
+			realImage.display();
+		}
+	}
+	
+	
+	
+}
+
+class RealImage extends ImageDpProxy {
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

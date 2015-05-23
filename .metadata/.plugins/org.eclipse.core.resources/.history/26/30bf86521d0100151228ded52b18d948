@@ -1,0 +1,11 @@
+package StudyJava;
+
+public class StuffsTest {
+
+}
+
+class ThreadTest01 {
+	public void soping(String txt) {
+		System.out.println(txt);
+	}
+}

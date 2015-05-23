@@ -1,0 +1,49 @@
+package StudyGraphic;
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.util.ArrayList;
+
+import javax.naming.SizeLimitExceededException;
+import javax.swing.*;
+
+public class FrameBibilavaTest01 extends JFrame implements KeyListener{
+
+	//constructor
+	public FrameBibilavaTest01() {
+		// TODO Auto-generated constructor stub
+		setTitle("title");
+		setBounds(50, 50, 500, 250);
+		setLayout(new FlowLayout());
+
+		
+
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new FrameBibilavaTest01();
+	}
+	
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

@@ -1,0 +1,42 @@
+package StudyGraphic;
+
+import java.awt.*;
+
+import javax.swing.*;
+
+public class FrameBibilavaTest01 extends JFrame {
+
+	PanelTesting01 panelTesting01;
+	PointTesting pointTesting;
+	int[] sizeArr = new int[2];
+	
+	public FrameBibilavaTest01() {
+		// TODO Auto-generated constructor stub
+		setTitle("title");
+		setBounds(10, 40, 500, 250);
+		setLayout(new FlowLayout());
+
+		
+
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class PanelTesting01 extends JPanel {
+	
+	@Override
+	public void paintComponent(Graphics g) {
+		
+	}
+	
+}
+
+class PointTesting {
+	int x, y;
+}
